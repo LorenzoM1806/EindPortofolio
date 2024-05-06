@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark grey background */
+    color: #e0e0e0; /* Light grey text for readability */
+}
+
+.navbar, footer {
+    background-color: #121212; /* Very dark grey, almost black */
+    border-bottom: none; /* Remove border for a cleaner look */
+}
+
+.navbar-brand, .nav-link {
+    color: #e0e0e0; /* Light grey text for contrast */
+}
+
+.nav-link:hover {
+    background-color: #2a2a2a; /* Slightly lighter grey on hover */
+    color: #ffffff; /* White text for better visibility */
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+h5 {
+    margin-top: 20px;
+    color: #ffffff; /* White color for headings */
+}
+
+.btn-primary {
+    background-color: #2a2a2a; /* Dark grey button */
+    border-color: #1a1a1a; /* Border color slightly darker than button */
+}
+
+.btn-primary:hover {
+    background-color: #383838; /* Lighter grey on hover */
+    border-color: #2a2a2a; /* Adjust border color on hover */
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img.img-fluid {
+    max-height: 300px;
+    filter: brightness(0.8); /* Darkens the image to fit the theme */
+}
+
+.container {
+    padding-top: 20px;
+}
+
+/* Additional style for hover effects to links in the navbar and footer */
+.navbar-brand:hover, .nav-link:hover, footer a:hover {
+    color: #ffffff;
+    text-decoration: none; /* Removes underline from links on hover */
+}
