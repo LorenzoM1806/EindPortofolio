@@ -18,14 +18,13 @@ body {
     color: #ffffff; /* White text for better visibility */
 }
 
-.intro-text {
-    font-size: 1.2rem;
+.right-text {
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
-
-h5 {
-    margin-top: 20px;
-    color: #ffffff; /* White color for headings */
+.left-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .btn-primary {
@@ -38,26 +37,35 @@ h5 {
     border-color: #2a2a2a; /* Adjust border color on hover */
 }
 
-footer {
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-img.img-fluid {
-    max-height: 300px;
-    filter: brightness(0.8); /* Darkens the image to fit the theme */
-}
-
 .container {
-    padding-top: 20px;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the children horizontally */
+    align-items: center; /* Aligns the children vertically */
+    padding: 10px; /* Adds padding around the content inside the container */
+}
+
+.container div {
+    flex: 1; /* Each child will take equal amount of space */
+}
+
+.img-multiple {
+    max-height: 150px;
+    filter: brightness(0.8); /* Darkens the image to fit the theme */
+    border-radius: 15px;
+}
+
+.img-single {
+    max-height: 250px;
+    filter: brightness(0.8); /* Darkens the image to fit the theme */
+    border-radius: 15px;
 }
 
 /* Additional style for hover effects to links in the navbar and footer */
 .navbar-brand:hover, .nav-link:hover, footer a:hover {
     color: #ffffff;
     text-decoration: none; /* Removes underline from links on hover */
+}
+
+.center {
+    text-align: center;
 }

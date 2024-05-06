@@ -2,11 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #121212; /* Dark grey background */
     color: #e0e0e0; /* Light grey text for readability */
+    line-height: 1.6; /* Improves text readability */
+    margin: 0;
+    padding: 0;
 }
 
 .navbar, footer {
     background-color: #121212; /* Very dark grey, almost black */
-    border-bottom: none; /* Remove border for a cleaner look */
 }
 
 .navbar-brand, .nav-link {
@@ -18,42 +20,47 @@ body {
     color: #ffffff; /* White text for better visibility */
 }
 
-.intro-text {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-h5 {
-    margin-top: 20px;
-    color: #ffffff; /* White color for headings */
-}
-
-.btn-primary {
-    background-color: #2a2a2a; /* Dark grey button */
-    border-color: #1a1a1a; /* Border color slightly darker than button */
-}
-
-.btn-primary:hover {
-    background-color: #383838; /* Lighter grey on hover */
-    border-color: #2a2a2a; /* Adjust border color on hover */
-}
-
-footer {
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-img.img-fluid {
-    max-height: 300px;
-    filter: brightness(0.8); /* Darkens the image to fit the theme */
-}
-
 .container {
-    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    justify-content: space-around; /* Evenly space around the items */
+    align-items: flex-start; /* Align items at the start of the flex line */
+    padding: 20px;
+    gap: 20px; /* Space between elements */
+}
+
+.container > div {
+    flex: 1; /* Each child takes equal space */
+    min-width: 300px; /* Minimum width of each child */
+    padding: 20px;
+    background-color: #1e1e1e; /* Slightly lighter than body for depth */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for 3D effect */
+}
+
+h3, h4 {
+    color: #ffffff;
+    margin-top: 0.5em;
+}
+
+p, li {
+    font-size: 1rem;
+    color: #cccccc; /* Lighter text for better contrast */
+}
+
+img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+ul {
+    padding-left: 20px; /* Proper indentation for list */
+}
+
+h4 {
+    border-bottom: 1px solid #2a2a2a; /* Subtle line under headers */
+    padding-bottom: 10px; /* Spacing under headers */
 }
 
 /* Additional style for hover effects to links in the navbar and footer */
