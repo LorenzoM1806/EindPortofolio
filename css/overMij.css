@@ -1,11 +1,11 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark grey background */
+    background-color: #0b0c10; /* Dark grey background */
     color: #e0e0e0; /* Light grey text for readability */
 }
 
 .navbar, footer {
-    background-color: #121212; /* Very dark grey, almost black */
+    background-color: #45A29E; /* Very dark grey, almost black */
     border-bottom: none; /* Remove border for a cleaner look */
 }
 
@@ -14,23 +14,33 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #2a2a2a; /* Slightly lighter grey on hover */
+    background-color: #0b0c10; /* Slightly lighter grey on hover */
     color: #ffffff; /* White text for better visibility */
 }
+
 
 .intro-text {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
+a {
+    color: #66fcf1;
+    text-decoration: none;
+}
+a:hover {
+    color: #45A29E;
+}
+
 .btn-primary {
-    background-color: #2a2a2a; /* Dark grey button */
-    border-color: #1a1a1a; /* Border color slightly darker than button */
+    background-color: #0b0c10; /* Dark grey button */
+    border-color: #66fcf1; /* Border color slightly darker than button */
 }
 
 .btn-primary:hover {
-    background-color: #383838; /* Lighter grey on hover */
-    border-color: #2a2a2a; /* Adjust border color on hover */
+    background-color: #66fcf1; /* Lighter grey on hover */
+    border-color: #0b0c10; /* Adjust border color on hover */
+    color: #0b0c10;
 }
 
 .container {
@@ -59,4 +69,10 @@ img {
 
 .center {
     text-align: center;
+}
+
+i {
+    font-size: 20px;
+    margin-left: 5px;
+    color: white;
 }

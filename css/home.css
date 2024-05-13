@@ -1,29 +1,26 @@
-/* Custom CSS for homepage */
-
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #141d26; /* Updated to a dark blue background */
-    color: #ffffff; /* White text for readability */
+    background-color: #0b0c10; /* Dark grey background */
+    color: #e0e0e0; /* Light grey text for readability */
 }
 
 .navbar, footer {
-    background-color: #141d26; /* Dark blue background */
+    background-color: #45A29E;
     border-bottom: none; /* Remove border for a cleaner look */
 }
 
 .navbar-brand, .nav-link {
-    color: #ffffff; /* White text for contrast */
+    color: #e0e0e0; /* Light grey text for contrast */
 }
 
 .nav-link:hover {
-    background-color: #2b3f53; /* Darker blue on hover */
+    background-color: #0b0c10; /* Slightly lighter grey on hover */
     color: #ffffff; /* White text for better visibility */
 }
 
 .intro-text {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #ffffff; /* White color for text */
 }
 
 h5 {
@@ -32,23 +29,14 @@ h5 {
 }
 
 .btn-primary {
-    background-color: #2b3f53; /* Dark blue button */
-    border-color: #1f2a35; /* Border color slightly darker than button */
-    color: #ffffff; /* White text for button */
+    background-color: #0b0c10; /* Dark grey button */
+    border-color: #66fcf1; /* Border color slightly darker than button */
 }
 
 .btn-primary:hover {
-    background-color: #3c536c; /* Lighter blue on hover */
-    border-color: #2b3f53; /* Adjust border color on hover */
-}
-
-footer {
-    color: #ffffff; /* White text */
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #66fcf1; /* Lighter grey on hover */
+    border-color: #0b0c10; /* Adjust border color on hover */
+    color: #0b0c10;
 }
 
 img.img-fluid {
@@ -64,4 +52,19 @@ img.img-fluid {
 .navbar-brand:hover, .nav-link:hover, footer a:hover {
     color: #ffffff;
     text-decoration: none; /* Removes underline from links on hover */
+}
+
+i {
+    font-size: 20px;
+    margin-left: 5px;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #45A29E; /* Adjust as needed */
+    color: #e0e0e0; /* Adjust as needed */
+    padding: 5px;
 }

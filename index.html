@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/home.css">
+    <title>Home</title>
 </head>
-<body>
+<body style="background-image: url(afbeeldingen/background.png);background-size: cover;background-position: center;background-repeat: no-repeat;">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="overMij.html">Over Mij</a>
                     </li>
@@ -29,34 +26,35 @@
                         <a class="nav-link" href="projecten.html">Projecten</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cv.html">CV</a>
+                        <a class="nav-link" href="cv.html">Cv</a>
                     </li>
                 </ul>
             </div>
+            <div>
+                <a href="https://github.com/LorenzoM1806" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/lorenzo-miechielsen-82602b27a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
         </div>
     </nav>
+    <br>
 
-    <div class="container py-5">
-        <div class="row">
+    <div class="container">
+        <p class="intro-text">
+            Welkom op mijn site.<br>
+            Mijn naam is Lorenzo Miechielsen, ik ben een student toegepaste informatica aan de Thomas More hogeschool in Geel.
+        </p>
+    
+        <div class="row my-4">
             <div class="col-md-6">
-                <h1 class="display-4 mb-3">Welkom op mijn portfolio</h1>
-                <p class="lead">Mijn naam is Lorenzo Miechielsen en ik ben een student toegepaste informatica aan de Thomas More hogeschool in Geel. Ik ben gepassioneerd door technologie en creatie.</p>
+                <p class="intro-text">Als u wat meer wil weten over mij:</p>
                 <a href="overMij.html" class="btn btn-primary">Meer over mij</a>
             </div>
             <div class="col-md-6">
-                <img src="afbeeldingen/Lorenzo.jpg" alt="Lorenzo Miechielsen" class="img-fluid rounded-circle">
+                <img src="afbeeldingen/Lorenzo.jpg" alt="Lorenzo Miechielsen" class="img-fluid">
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

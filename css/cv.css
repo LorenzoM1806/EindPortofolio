@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark grey background */
+    background-color: #0b0c10; /* Dark grey background */
     color: #e0e0e0; /* Light grey text for readability */
     line-height: 1.6; /* Improves text readability */
     margin: 0;
@@ -8,7 +8,8 @@ body {
 }
 
 .navbar, footer {
-    background-color: #121212; /* Very dark grey, almost black */
+    background-color: #45A29E; /* Very dark grey, almost black */
+    border-bottom: none;
 }
 
 .navbar-brand, .nav-link {
@@ -16,7 +17,7 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #2a2a2a; /* Slightly lighter grey on hover */
+    background-color: #0b0c10; /* Slightly lighter grey on hover */
     color: #ffffff; /* White text for better visibility */
 }
 
@@ -32,20 +33,22 @@ body {
 .container > div {
     flex: 1; /* Each child takes equal space */
     min-width: 300px; /* Minimum width of each child */
-    padding: 20px;
-    background-color: #1e1e1e; /* Slightly lighter than body for depth */
+    padding: 10px;
+    background-color: #0b0c10; /* Slightly lighter than body for depth */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for 3D effect */
+}
+.container > div p {
+    margin-bottom: 0.25em; /* Adjust the margin bottom as desired */
 }
 
 h3, h4 {
-    color: #ffffff;
-    margin-top: 0.5em;
+    color: #66fcf1;
+    margin-top: 0.7em;
 }
 
 p, li {
     font-size: 1rem;
-    color: #cccccc; /* Lighter text for better contrast */
+    color: white; /* Lighter text for better contrast */
 }
 
 img {
@@ -59,7 +62,7 @@ ul {
 }
 
 h4 {
-    border-bottom: 1px solid #2a2a2a; /* Subtle line under headers */
+    border-bottom: 1px solid #66fcf1; /* Subtle line under headers */
     padding-bottom: 10px; /* Spacing under headers */
 }
 
@@ -67,4 +70,10 @@ h4 {
 .navbar-brand:hover, .nav-link:hover, footer a:hover {
     color: #ffffff;
     text-decoration: none; /* Removes underline from links on hover */
+}
+
+i {
+    font-size: 20px;
+    margin-left: 5px;
+    color: white;
 }
