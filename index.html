@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/home.css">
     <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
             <a class="navbar-brand" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="overMij.html">Over Mij</a>
                     </li>
@@ -26,39 +29,34 @@
                         <a class="nav-link" href="projecten.html">Projecten</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cv.html">Cv</a>
+                        <a class="nav-link" href="cv.html">CV</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <br>
 
-    <div class="container">
-        <p class="intro-text">
-            Welkom op mijn site.<br>
-            Mijn naam is Lorenzo Miechielsen, ik ben een student toegepaste informatica aan de Thomas More hogeschool in Geel.<br>
-            Doorheen deze site gaat u mij beter leren kennen. Dus kies alvast een van deze onderwerpen.<br>
-        </p>
-
-        <div class="row my-4">
+    <div class="container py-5">
+        <div class="row">
             <div class="col-md-6">
-                <h5>Over Mij</h5>
-                <p>Op deze pagina ga ik wat meer over mezelf vertellen.</p>
+                <h1 class="display-4 mb-3">Welkom op mijn portfolio</h1>
+                <p class="lead">Mijn naam is Lorenzo Miechielsen en ik ben een student toegepaste informatica aan de Thomas More hogeschool in Geel. Ik ben gepassioneerd door technologie en creatie.</p>
                 <a href="overMij.html" class="btn btn-primary">Meer over mij</a>
             </div>
             <div class="col-md-6">
-                <img src="afbeeldingen/Lorenzo.jpg" alt="Lorenzo Miechielsen" class="img-fluid">
-            </div>
-        </div>
-
-        <div class="row my-4">
-            <div class="col-md-6">
-                <h5>Projecten</h5>
-                <p>Op deze pagina kan je een aantal projecten van mij vinden.</p>
-                <a href="projecten.html" class="btn btn-primary">Bekijk projecten</a>
+                <img src="afbeeldingen/Lorenzo.jpg" alt="Lorenzo Miechielsen" class="img-fluid rounded-circle">
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

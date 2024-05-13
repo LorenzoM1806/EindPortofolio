@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/projecten.css">
     <title>Home</title>
+    <script>
+      // Add this JavaScript to trigger the slide-in effect when images come into view
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll('.img-multiple, .img-single');
+
+  function checkScroll() {
+    images.forEach(image => {
+      const slideInAt = (window.scrollY + window.innerHeight) - image.clientHeight / 2;
+      const imageBottom = image.offsetTop + image.clientHeight;
+
+      const isHalfShown = slideInAt > image.offsetTop;
+      const isNotScrolledPast = window.scrollY < imageBottom;
+
+      if (isHalfShown && isNotScrolledPast) {
+        image.classList.add('slide-in');
+      } else {
+        image.classList.remove('slide-in');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  window.addEventListener('resize', checkScroll);
+
+  // Trigger the slide-in effect on page load if images are already in view
+  checkScroll();
+});
+
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -34,7 +63,9 @@
     </nav>
     <br>
 
+    <h2>Projecten</h2>
     <!--Project React-->
+    <h4>Project React</h4>
     <div class="container">
       <div>
         <img src="afbeeldingen/home_page_react.png" class="img-multiple">
@@ -45,21 +76,24 @@
         Dit is een project dat wij moesten maken voor het vak React.
         In dit project mochten wij over een zelfgekozen thema een webpagina bouwen.
         Hierin heb ik 3 verschillende pagina's gemaakt: een home page, een randomizer en een search page.
+        De homepage is een simpele navigatie pagina waarin de gebruiker de keuze heeft naar welke pagina hij wilt.
+        Op de randomizer krijgt de gerbuiker een random kaart te zien en op de search page kan je een "archetype" opzoeken en krijg je elke kaart hiervan te zien.
         Dit is wel degelijk een project waarop ik trots ben omdat dit een vak is waarin ik niet goed ben.
       </div>
     </div>
 
     <br>
 
-    <!--Project Club Roos-->
+    <!--Project Club Roos-->   
+    <h4>Project Club Roos</h4>
     <div class="container">
       <div class="left-text">
         Dit is een project dat wij in het begin van het 2de semester 2022 hebben gedaan in groep.
         Wij moesten een website bouwen voor een "bedrijf" met een aantal vooropgestelde regels.
-        Wij moesten de website bouwen voor club roos.
+        Wij moesten de website bouwen voor club roos in WordPress. Bij club roos kan je terecht voor keramiek, om te kopen én om zelf te maken. Voor interieuradvies en -ontwerp. Voor illustraties en grafisch werk.
         Zoals de site online staat zijn er kleine aanpassingen geweest maar het grootste deel is hoe wij die hadden opgesteld.
         Zo is er bijvoorbeeld een extra pagina toegevoegd en een aantal dingen verandert.
-        Het deel dat ik heb gedaan is de contact pagina en de footer. Voor de rest heb ik ons team bijgestaan met fouten, problemen.<br>
+        Het deel dat ik heb gedaan is de contact pagina en de footer. Voor de rest heb ik ons team bijgestaan met fouten, problemen en eventuele aanpassingen.<br>
         <a href="https://www.clubroos.be" target="_blank" class="btn btn-info">Club Roos</a>
       </div>
       <div>
@@ -70,14 +104,17 @@
     <br>
 
     <!--Project PHP-->
+    <h4>Project PHP</h4>
     <div class="container">
       <div>
-        image pending
+        <img src="afbeeldingen/PHP_liveKlassement.png" class="img-single">
+        <img src="afbeeldingen/PHP_tijdsregistratie.png" class="img-single">
       </div>
       <div class="right-text">
         Dit is een project dat wij moesten maken voor het vak PHP.
+        Deze site is gebouwd in PHP en maakt gebruik van tailwind.
         In dit project kregen wij een customer case die wij moesten uitwerken.
-        Wij moesten een webapplicatie bouwen voor een koers dat jaarlijks werd gegeven.
+        Wij moesten als customer case een webapplicatie bouwen voor WTC Roland, deze geven jaarlijks een koers.
         Deze werd dan gebruikt door de mensen van de vereneging en een deel door de algemene gebruiker.
         Hetgene dat ik heb gedaan in dit groepsproject is:
         <ul>
@@ -97,36 +134,14 @@
       </div>
     </div>
 
-      <!--
-          
-                      <p class="card-text">
-                      Dit is een project dat wij moesten maken voor het vak PHP.<br>
-                      In dit project kregen wij een customer case die wij moesten uitwerken.<br>
-                      Wij moesten een webapplicatie bouwen voor een koers dat jaarlijks werd gegeven.<br>
-                      Deze werd dan gebruikt door de mensen van de vereneging en een deel door de algemene gebruiker.<br>
-                      Hetgene dat ik heb gedaan in dit groepsproject is:
-                      <ul>
-                        <li>De eerste versie van header & footer</li>
-                        <li>Info opzoeken naar een mailserver</li>
-                        <li>Locale mailserver aanmaken en 1ste test</li>
-                        <li>Mails beheren pagina</li>
-                        <li>Inschrijvingstermijn pagina</li>
-                        <li>Volledige versie van klassement pagina</li>
-                        <li>Liveklassement pagina</li>
-                        <li>Tijdsregistratie pagina</li>
-                        <li>Indelen van motoren pagina</li>
-                        <li>Startvolgorde pagina</li>
-                        <li>Inschrijvingsgeld pagina</li>
-                      </ul>
-                    </p>
-                    <a href="https://roland.smo2024.be/" class="btn btn-info" target="_blank">PHP Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    </div>-->
+    <h2>Wat heb ik geleerd?</h2>
+    <div class="container">
+      <div class="left-text">
+        Bij alle drie de projecten heb ik de funtionele kant bijgeleerd. 2 van de 3 projecten zijn namelijk geschreven in talen die ik niet goed beheers.
+        Bij de 2 groepsprojecten heb ik het samenwerken toch verbeterd, in beide projecten was dit toch heel verschillend.
+        Bij het project van php, heb ik ook vastgesteld dat wij moeten beginnen aan de verhaallijn van het project. Wij waren namelijk begonnen at random en wij hebben
+        toch ingezien dat wij beter stap per stap werkten en deel per deel.
+      </div>
+    </div>
 </body>
 </html>

@@ -1,26 +1,29 @@
+/* Custom CSS for homepage */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark grey background */
-    color: #e0e0e0; /* Light grey text for readability */
+    background-color: #141d26; /* Updated to a dark blue background */
+    color: #ffffff; /* White text for readability */
 }
 
 .navbar, footer {
-    background-color: #121212; /* Very dark grey, almost black */
+    background-color: #141d26; /* Dark blue background */
     border-bottom: none; /* Remove border for a cleaner look */
 }
 
 .navbar-brand, .nav-link {
-    color: #e0e0e0; /* Light grey text for contrast */
+    color: #ffffff; /* White text for contrast */
 }
 
 .nav-link:hover {
-    background-color: #2a2a2a; /* Slightly lighter grey on hover */
+    background-color: #2b3f53; /* Darker blue on hover */
     color: #ffffff; /* White text for better visibility */
 }
 
 .intro-text {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #ffffff; /* White color for text */
 }
 
 h5 {
@@ -29,17 +32,18 @@ h5 {
 }
 
 .btn-primary {
-    background-color: #2a2a2a; /* Dark grey button */
-    border-color: #1a1a1a; /* Border color slightly darker than button */
+    background-color: #2b3f53; /* Dark blue button */
+    border-color: #1f2a35; /* Border color slightly darker than button */
+    color: #ffffff; /* White text for button */
 }
 
 .btn-primary:hover {
-    background-color: #383838; /* Lighter grey on hover */
-    border-color: #2a2a2a; /* Adjust border color on hover */
+    background-color: #3c536c; /* Lighter blue on hover */
+    border-color: #2b3f53; /* Adjust border color on hover */
 }
 
 footer {
-    color: white;
+    color: #ffffff; /* White text */
     text-align: center;
     padding: 10px 0;
     position: fixed;

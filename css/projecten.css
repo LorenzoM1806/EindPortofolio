@@ -48,6 +48,17 @@ body {
     flex: 1; /* Each child will take equal amount of space */
 }
 
+ /* Add this CSS to make images slide in when scrolled into view */
+.img-multiple, .img-single {
+    opacity: 0; /* Initially hide images */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .slide-in {
+    opacity: 1; /* Make images visible when scrolled into view */
+  }
+   
+
 .img-multiple {
     max-height: 150px;
     filter: brightness(0.8); /* Darkens the image to fit the theme */
