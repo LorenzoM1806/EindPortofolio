@@ -1,70 +1,59 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #0b0c10; /* Dark grey background */
-    color: #e0e0e0; /* Light grey text for readability */
+    background-color: gainsboro;
+    margin: 0;
 }
-
-.navbar, footer {
-    background-color: #45A29E;
-    border-bottom: none; /* Remove border for a cleaner look */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
-
-.navbar-brand, .nav-link {
-    color: #e0e0e0; /* Light grey text for contrast */
-}
-
-.nav-link:hover {
-    background-color: #0b0c10; /* Slightly lighter grey on hover */
-    color: #ffffff; /* White text for better visibility */
-}
-
-.intro-text {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-h5 {
-    margin-top: 20px;
-    color: #ffffff; /* White color for headings */
-}
-
-.btn-primary {
-    background-color: #0b0c10; /* Dark grey button */
-    border-color: #66fcf1; /* Border color slightly darker than button */
-}
-
-.btn-primary:hover {
-    background-color: #66fcf1; /* Lighter grey on hover */
-    border-color: #0b0c10; /* Adjust border color on hover */
-    color: #0b0c10;
-}
-
-img.img-fluid {
-    max-height: 300px;
-    filter: brightness(0.8); /* Darkens the image to fit the theme */
-}
-
-.container {
-    padding-top: 20px;
-}
-
-/* Additional style for hover effects to links in the navbar and footer */
-.navbar-brand:hover, .nav-link:hover, footer a:hover {
-    color: #ffffff;
-    text-decoration: none; /* Removes underline from links on hover */
-}
-
-i {
-    font-size: 20px;
-    margin-left: 5px;
+.navbar a {
     color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #575757;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #45A29E; /* Adjust as needed */
-    color: #e0e0e0; /* Adjust as needed */
-    padding: 5px;
+.picture {
+    display: flex; /* Makes the picture container a flex container */
+    justify-content: center; /* Centers the image and text together */
+    align-items: center; /* Vertically aligns the image and text */
+    margin-top: 50px;
+    gap: 20px; /* Reduces the gap between the image and the text */
+    padding: 20px;
+}
+
+img {
+    height: 570px;
+    max-width: 100%; /* Ensures the image is responsive */
+    object-fit: cover; /* Adjusts how the image fits inside the container */
+    border-radius: 20px; /* Adds rounded corners */
+}
+
+.picture-text {
+    background-color: white; /* Adds a white background for the text box */
+    padding: 20px; /* Adds space inside the text box */
+    border-radius: 10px; /* Rounds the corners of the text box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    width: auto; /* Adapts the text box width to its content */
+    max-width: 450px; /* Restricts the text box width */
+    text-align: justify; /* Justifies the text for a cleaner look */
+    font-size: 18px; /* Adjusts the font size */
+    color: #333; /* Sets the text color */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Link Styling */
+.picture-text a {
+    color:  #e14c38; /* Default link color */
+    text-decoration: none; /* Removes underline */
+}
+
+.picture-text a:hover {
+    text-decoration: underline; /* Adds underline on hover */
 }

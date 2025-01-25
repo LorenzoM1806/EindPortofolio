@@ -1,95 +1,116 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #0b0c10; /* Dark grey background */
-    color: #e0e0e0; /* Light grey text for readability */
+    background-color: gainsboro;
+    margin: 0;
 }
-
-.navbar, footer {
-    background-color: #45A29E; /* Very dark grey, almost black */
-    border-bottom: none; /* Remove border for a cleaner look */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
-
-.navbar-brand, .nav-link {
-    color: #e0e0e0; /* Light grey text for contrast */
-}
-
-.nav-link:hover {
-    background-color: #0b0c10; /* Slightly lighter grey on hover */
-    color: #ffffff; /* White text for better visibility */
-}
-
-.right-text {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-.left-text {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    margin-right: 12px;
-}
-
-.btn-primary {
-    background-color: #0b0c10; /* Dark grey button */
-    border-color: #66fcf1; /* Border color slightly darker than button */
-}
-
-.btn-primary:hover {
-    background-color: #66fcf1; /* Lighter grey on hover */
-    border-color: #0b0c10; /* Adjust border color on hover */
-    color: #0b0c10;
-}
-
-.container {
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers the children horizontally */
-    align-items: center; /* Aligns the children vertically */
-    padding: 10px; /* Adds padding around the content inside the container */
-}
-
-.container div {
-    flex: 1; /* Each child will take equal amount of space */
-}
-
- /* Add this CSS to make images slide in when scrolled into view */
-.img-multiple, .img-single {
-    opacity: 0; /* Initially hide images */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition */
-  }
-  
-  .slide-in {
-    opacity: 1; /* Make images visible when scrolled into view */
-  }
-   
-
-.img-multiple {
-    max-height: 150px;
-    filter: brightness(0.8); /* Darkens the image to fit the theme */
-    border-radius: 15px;
-}
-
-.img-single {
-    max-height: 250px;
-    filter: brightness(0.8); /* Darkens the image to fit the theme */
-    border-radius: 15px;
-}
-
-/* Additional style for hover effects to links in the navbar and footer */
-.navbar-brand:hover, .nav-link:hover, footer a:hover {
-    color: #ffffff;
-    text-decoration: none; /* Removes underline from links on hover */
-}
-
-.center {
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
     text-align: center;
 }
-
-i {
-    font-size: 20px;
-    margin-left: 5px;
-    color: white;
+.navbar a:hover {
+    background-color: #575757;
+}
+/* General Styling for Project Section */
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increased spacing between projects */
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f8f9fa; /* Softer background color */
+    border-radius: 15px; /* Smoother corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better depth */
+    width: 90%;
+    max-width: 1100px; /* Slightly larger max width for better use of space */
 }
 
-h4{
-    color: #66fcf1;
-    font-weight: bold;
+.project-content {
+    display: flex;
+    flex-direction: column; /* Ensures title, description, and images are stacked */
+    gap: 20px; /* Better spacing between elements */
+    align-items: flex-start; /* Align content to the top */
+}
+.project-content h4 {
+    color:  #e14c38;
+}
+
+/* Styling for Descriptions */
+.project-description {
+    color: #343a40; /* Darker, more readable text color */
+    font-size: 1.1rem; /* Slightly larger font for better readability */
+    line-height: 1.6; /* Improved line spacing */
+}
+
+.project-description p {
+    margin-bottom: 15px; /* Add spacing below paragraphs */
+}
+
+/* Styling for Buttons */
+.link-button {
+    display: inline-block;
+    padding: 12px 24px; /* Larger buttons */
+    background-color:  #e14c38; /* Changed to a teal shade */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease;
+    font-weight: 500; /* Slightly bolder text */
+}
+
+.link-button:hover {
+    background-color:  #ff8473;
+    color: black;
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Styling for Images */
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Adjusted spacing between images */
+}
+
+.project-images img, .project-single-image {
+    max-width: calc(50% - 10px); /* Ensure two images per row with spacing */
+    height: auto;
+    border-radius: 12px; /* Smoother corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow for better focus */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.project-images img:hover, .project-single-image:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+/* Learnings Section */
+.learnings {
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fdfdfe; /* Light background for contrast */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1100px;
+    font-size: 1.1rem;
+    color: #495057; /* Neutral text color */
+    line-height: 1.6;
+}
+
+.learnings h4 {
+    font-size: 1.5rem;
+    color:  #e14c38;
+    margin-bottom: 15px;
+}
+
+.learnings p {
+    margin-top: 10px;
 }

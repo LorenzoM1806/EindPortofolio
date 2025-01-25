@@ -7,151 +7,95 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/projecten.css">
-    <title>Home</title>
-    <script>
-      // Add this JavaScript to trigger the slide-in effect when images come into view
-document.addEventListener("DOMContentLoaded", function() {
-  const images = document.querySelectorAll('.img-multiple, .img-single');
-
-  function checkScroll() {
-    images.forEach(image => {
-      const slideInAt = (window.scrollY + window.innerHeight) - image.clientHeight / 2;
-      const imageBottom = image.offsetTop + image.clientHeight;
-
-      const isHalfShown = slideInAt > image.offsetTop;
-      const isNotScrolledPast = window.scrollY < imageBottom;
-
-      if (isHalfShown && isNotScrolledPast) {
-        image.classList.add('slide-in');
-      } else {
-        image.classList.remove('slide-in');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', checkScroll);
-  window.addEventListener('resize', checkScroll);
-
-  // Trigger the slide-in effect on page load if images are already in view
-  checkScroll();
-});
-
-    </script>
+    <title>Projecten</title>
 </head>
-<body style="background-image: url(afbeeldingen/background.png);background-size: cover;background-position: center;background-repeat: no-repeat;">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link" href="overMij.html">Over Mij</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projecten.html">Projecten</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="cv.html">Cv</a>
-                  </li>
-              </ul>
-          </div>
-          <div>
-              <a href="https://github.com/LorenzoM1806" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/lorenzo-miechielsen-82602b27a/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          </div>
-      </div>
-  </nav>
-  <br>
-    <!--Project React-->
-    
-    <div class="container">
-      <div>
-        <h4>Project React</h4>
-        <br>
-        <img src="afbeeldingen/home_page_react.png" class="img-multiple">
-        <img src="afbeeldingen/randomizer.png" class="img-multiple">
-        <img src="afbeeldingen/searcher.png" class="img-multiple">
-      </div>
-      <div class="right-text">
-        Dit is een project dat wij moesten maken voor het vak React.
-        In dit project mochten wij over een zelfgekozen thema een webpagina bouwen.
-        Hierin heb ik 3 verschillende pagina's gemaakt: een home page, een randomizer en een search page.
-        De homepage is een simpele navigatie pagina waarin de gebruiker de keuze heeft naar welke pagina hij wilt.
-        Op de randomizer krijgt de gerbuiker een random kaart te zien en op de search page kan je een "archetype" opzoeken en krijg je elke kaart hiervan te zien.
-        Dit is wel degelijk een project waarop ik trots ben omdat dit een vak is waarin ik niet goed ben.
-      </div>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="projecten.html">Projecten</a>
+        <a href="cv.html">CV</a>
     </div>
 
-    <br>
+        <!-- Project React -->
+    <section class="project">
+        <div class="project-content">
+            <h4>Project React</h4>
+            <div class="project-images">
+                <img src="afbeeldingen/home_page_react.png" alt="Home Page React">
+                <img src="afbeeldingen/randomizer.png" alt="Randomizer">
+                <img src="afbeeldingen/searcher.png" alt="Searcher">
+            </div>
+            <div class="project-description">
+                <p>
+                    Dit project heb ik gemaakt voor het vak React. De opdracht was om een webpagina te bouwen rond een zelfgekozen thema. In dit project heb ik drie verschillende pagina's ontwikkeld: een homepagina, een randomizer, en een zoekpagina.
+                    De homepagina fungeert als een eenvoudige navigatiepagina waarmee gebruikers kunnen kiezen naar welke pagina ze willen gaan.
+                    De randomizer toont een willekeurige kaart aan de gebruiker.
+                    Op de zoekpagina kun je een 'archetype' opzoeken, waarna alle kaarten binnen dat archetype worden weergegeven.
+                    Ik ben trots op dit project, vooral omdat React niet mijn sterkste vak is. Het ontwikkelen van deze functionaliteiten was een waardevolle uitdaging en een belangrijke leerervaring.
+                </p>
+            </div>
+            
+        </div>
+    </section>
 
-    <!--Project Club Roos-->   
-    <div class="container">
-      <div class="left-text">
-        <h4>Project Club Roos</h4>
-        <br>
-        Dit is een project dat wij in het begin van het 2de semester 2022 hebben gedaan in groep.
-        Wij moesten een website bouwen voor een "bedrijf" met een aantal vooropgestelde regels.
-        Wij moesten de website bouwen voor club roos in WordPress. Bij club roos kan je terecht voor keramiek, om te kopen én om zelf te maken. Voor interieuradvies en -ontwerp. Voor illustraties en grafisch werk.
-        Zoals de site online staat zijn er kleine aanpassingen geweest maar het grootste deel is hoe wij die hadden opgesteld.
-        Zo is er bijvoorbeeld een extra pagina toegevoegd en een aantal dingen verandert.
-        Het deel dat ik heb gedaan is de contact pagina en de footer. Voor de rest heb ik ons team bijgestaan met fouten, problemen en eventuele aanpassingen.<br>
-        <br>
-        <a href="https://www.clubroos.be" target="_blank" class="btn btn-primary">Club Roos</a>
-      </div>
-      <div>
-        <img src="afbeeldingen/clubroos.png" class="img-single">
-      </div>
-    </div>
+    <!-- Project Club Roos -->
+    <section class="project">
+        <div class="project-content">
+            <h4>Project Club Roos</h4>
+            <img src="afbeeldingen/clubroos.png" alt="Club Roos" class="project-single-image">
+            <div class="project-description">
+                <p>
+                    Dit groepsproject hebben we uitgevoerd aan het begin van het tweede semester in 2022. Onze opdracht was om een website te bouwen voor een 'bedrijf' volgens een aantal vooraf opgestelde regels. Wij kozen ervoor om een website te maken voor Club Roos in WordPress.
+                    Club Roos biedt keramiek aan, zowel te koop als om zelf te maken, en is ook gespecialiseerd in interieuradvies en -ontwerp, evenals illustraties en grafisch werk. 
+                    De live versie van de website bevat enkele kleine aanpassingen, zoals een extra pagina en enkele wijzigingen, maar het grootste deel komt overeen met ons oorspronkelijke ontwerp.
+                    Mijn bijdrage aan dit project bestond uit het ontwikkelen van de contactpagina en de footer. 
+                    Daarnaast ondersteunde ik ons team bij het oplossen van fouten, het aanpakken van problemen, en het doorvoeren van aanpassingen.
+                </p>
+                <a href="https://www.clubroos.be" target="_blank" class="link-button">Bekijk Website</a>
+            </div>
+            
+        </div>
+    </section>
 
-    <br>
+    <!-- Project PHP -->
+    <section class="project">
+        <div class="project-content">
+            <h4>Project PHP</h4>
+            <div class="project-images">
+                <img src="afbeeldingen/PHP_liveKlassement.png" alt="Live Klassement">
+                <img src="afbeeldingen/PHP_tijdsregistratie.png" alt="Tijdsregistratie">
+            </div>
+            <div class="project-description">
+                <p>
+                    Dit project hebben we uitgevoerd voor het vak PHP. De website is gebouwd in PHP en maakt gebruik van Tailwind CSS. De opdracht was gebaseerd op een customer case: we moesten een webapplicatie ontwikkelen voor WTC Roland. WTC Roland organiseert jaarlijks een koers, en de webapplicatie werd ontworpen om zowel de leden van de vereniging als de algemene gebruikers te ondersteunen.
+                    Mijn bijdrage aan dit groepsproject omvatte de volgende onderdelen:<br>
+                    Technische structuur:
+                    <li>Ontwikkeling van de eerste versie van de header en footer.</li>
+                    <li>Opzoeken en configureren van een lokale mailserver, inclusief het uitvoeren van de eerste tests.</li>
+                    <br>
+                    Functionele pagina's:
+                    <li>Pagina voor het beheren van mails.</li>
+                    <li>Pagina voor de inschrijvingstermijn.</li>
+                    <li>Volledige ontwikkeling van de klassementpagina en de liveklassementpagina.</li>
+                    <li>Pagina voor tijdsregistratie.</li>
+                    <li>Pagina voor het indelen van motoren en het opstellen van de startvolgorde.</li>
+                    <li>Pagina voor het inschrijvingsgeld.</li>
+                    
+                    Dit project bood me de kans om diverse aspecten van webontwikkeling in PHP te verkennen en mijn vaardigheden in het bouwen van functionele en dynamische applicaties te verbeteren.
+                </p>
+                <a href="https://roland.smo2024.be/" target="_blank" class="link-button">Bekijk Project</a>
+            </div>
+        </div>
+    </section>
 
-    <!--Project PHP-->
-    
-    <div class="container">
-      <div>
-        <h4>Project PHP</h4>
-        <br>
-        <img src="afbeeldingen/PHP_liveKlassement.png" class="img-single">
-        <img src="afbeeldingen/PHP_tijdsregistratie.png" class="img-single">
-      </div>
-      <div class="right-text">
-        Dit is een project dat wij moesten maken voor het vak PHP.
-        Deze site is gebouwd in PHP en maakt gebruik van tailwind.
-        In dit project kregen wij een customer case die wij moesten uitwerken.
-        Wij moesten als customer case een webapplicatie bouwen voor WTC Roland, deze geven jaarlijks een koers.
-        Deze werd dan gebruikt door de mensen van de vereneging en een deel door de algemene gebruiker.
-        Hetgene dat ik heb gedaan in dit groepsproject is:
-        <ul>
-          <li>De eerste versie van header & footer</li>
-          <li>Info opzoeken naar een mailserver</li>
-          <li>Locale mailserver aanmaken en 1ste test</li>
-          <li>Mails beheren pagina</li>
-          <li>Inschrijvingstermijn pagina</li>
-          <li>Volledige versie van klassement pagina</li>
-          <li>Liveklassement pagina</li>
-          <li>Tijdsregistratie pagina</li>
-          <li>Indelen van motoren pagina</li>
-          <li>Startvolgorde pagina</li>
-          <li>Inschrijvingsgeld pagina</li>
-        </ul>
-        <a href="https://roland.smo2024.be/" class="btn btn-primary" target="_blank">PHP Project</a>
-      </div>
-    </div>
-
-    <br>
-    <div class="container">
-      <div class="left-text">
+    <!-- Learnings -->
+    <section class="learnings">
         <h4>Wat heb ik geleerd?</h4>
-        <br>
-        Bij alle drie de projecten heb ik de funtionele kant bijgeleerd. 2 van de 3 projecten zijn namelijk geschreven in talen die ik niet goed beheers.
-        Bij de 2 groepsprojecten heb ik het samenwerken toch verbeterd, in beide projecten was dit toch heel verschillend.
-        Bij het project van php, heb ik ook vastgesteld dat wij moeten beginnen aan de verhaallijn van het project. Wij waren namelijk begonnen at random en wij hebben
-        toch ingezien dat wij beter stap per stap werkten en deel per deel.
-      </div>
-    </div>
+        <p>
+            Bij alle drie de projecten heb ik veel bijgeleerd over de functionele kant van webontwikkeling. Twee van de drie projecten waren geschreven in programmeertalen waarin ik niet volledig thuis ben, wat mij de kans gaf om mijn kennis uit te breiden en nieuwe vaardigheden op te doen.
+            De twee groepsprojecten hebben me geholpen mijn samenwerkingsvaardigheden te verbeteren. Hoewel beide projecten in groepsverband werden uitgevoerd, waren de dynamiek en aanpak in elk project verschillend. Dit leerde me hoe belangrijk het is om flexibel te zijn en je aan te passen aan verschillende teamomgevingen.
+            Bij het PHP-project heb ik ook een belangrijke les geleerd over projectplanning. We begonnen zonder een duidelijke verhaallijn en werkten in willekeurige volgorde. Gaandeweg beseften we dat een gestructureerde aanpak, waarbij we stap voor stap en deel per deel werkten, veel efficiënter en overzichtelijker was. Deze ervaring neem ik mee naar toekomstige projecten.
+        </p>
+    </section>
 </body>
 </html>
